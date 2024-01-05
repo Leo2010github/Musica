@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.com/libraries/p5.js/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Musica</title>
+</head>
+<body>
+    <center>
+        <h1>Musica</h1>
+        <h2>Suba y Baja el volumen con su mano izquierda de la camara (su derecha real). Suba y Baja la velocidad con su mano derecha de la camara (su izquierda real).</h2>
+        <h2>Ingrese un numero del 1 al 3 para seleccionar una cancion luego de click en Actualizar🔄️ y Reproducir▶️</h2>
+        <button onclick="Re()">Reproducir▶️</button>
+        <button onclick="Pa()">Pausa⏸️</button>
+        <br>
+        <input type="text" placeholder="ingrese numero (1-3)" id="MusicaN">
+        <button onclick="Usar()">Actualizar🔄️</button>
+        <div id="volumen">
+            <img src="disco.gif" class="G">
+            <h3 id="V1">volumen</h3>
+        </div>
+        <div id="velocidad">
+            <img src="disco.gif" class="G">
+            <h3 id="V2">velocidad</h3>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
